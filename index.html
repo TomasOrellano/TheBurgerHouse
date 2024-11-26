@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger House</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vexor@1.0.0/dist/vexor.min.js"></script>
+  
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="text-2xl font-bold text-yellow-400">THE BURGER HOUSE</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-white hover:text-yellow-400 transition-colors">INICIO</a>
+          <a href="/html/burgers.html" class="text-white hover:text-yellow-400 transition-colors">BURGERS</a>
+          <a href="/html/Contactanos.html" class="text-white hover:text-yellow-400 transition-colors">CONTACTO</a>
+          <a href="/html/tienda.html" class="block px-3 py-2 text-white hover:text-yellow-400 transition-colors">TIENDA</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-button" class="md:hidden text-white">
+          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-black">
+        <a href="index.html" class="block px-3 py-2 text-white hover:text-yellow-400 transition-colors">INICIO</a>
+        <a href="/html/burgers.html" class="block px-3 py-2 text-white hover:text-yellow-400 transition-colors">MENU</a>
+        <a href="/html/Contactanos.html" class="block px-3 py-2 text-white hover:text-yellow-400 transition-colors">CONTACTO</a>
+        <a href="/html/tienda.html" class="block px-3 py-2 text-white hover:text-yellow-400 transition-colors">TIENDA</a>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="pt-24"> <!-- Padding top to push content below the navbar -->
+    <!-- Aquí puedes agregar el contenido principal de tu página -->
+  </div>
+<!-- Hero Section -->
+<section class="relative h-screen">
+    <div class="absolute inset-0">
+      <!-- Aquí puedes poner la imagen de fondo -->
+      <img 
+        src="https://images.unsplash.com/photo-1586816001966-79b736744398?q=80&w=3270&auto=format&fit=crop"
+        alt="Hero burger"
+        class="w-full h-full object-cover brightness-50"
+      />
+    </div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+      <h1 class="text-6xl md:text-8xl font-bold mb-6 text-yellow-400">
+        THE BURGER HOUSE
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl text-white">
+        Las mejores hamburguesas artesanales hechas con ingredientes frescos y de la más alta calidad
+      </p>
+      <a 
+        href="/html/burgers.html"
+        class="bg-yellow-400 text-black px-8 py-3 rounded-full font-bold text-lg hover:bg-yellow-300 transition-colors flex items-center gap-2"
+      >
+        Ver Menú <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+<!-- Features Section -->
+<section class="py-20 px-4 bg-zinc-900">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="text-center p-6 border border-yellow-400 rounded-lg">
+        <!-- Imagen más grande, ocupando todo el espacio disponible -->
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=3270&auto=format&fit=crop" 
+             alt="Calidad Premium" 
+             class="mx-auto mb-4 w-full h-64 object-cover">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Calidad Premium</h3>
+        <p class="text-white">Ingredientes seleccionados de la más alta calidad para crear la mejor experiencia</p>
+      </div>
+      <div class="text-center p-6 border border-yellow-400 rounded-lg">
+        <!-- Imagen más grande, ocupando todo el espacio disponible -->
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=3270&auto=format&fit=crop" 
+             alt="Hecho a Mano" 
+             class="mx-auto mb-4 w-full h-64 object-cover">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Hecho a Mano</h3>
+        <p class="text-white">Cada hamburguesa es preparada al momento con dedicación y pasión</p>
+      </div>
+      <div class="text-center p-6 border border-yellow-400 rounded-lg">
+        <!-- Imagen más grande, ocupando todo el espacio disponible -->
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=3270&auto=format&fit=crop" 
+             alt="Sabor Único" 
+             class="mx-auto mb-4 w-full h-64 object-cover">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Sabor Único</h3>
+        <p class="text-white">Recetas exclusivas que te harán vivir una experiencia gastronómica inolvidable</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- Footer -->
+<footer class="bg-black text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Main content area with three sections -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- First section: Burger House info -->
+        <div>
+          <h3 class="text-2xl font-bold text-yellow-400 mb-4">THE BURGER HOUSE</h3>
+          <p class="text-gray-400">
+            Las mejores hamburguesas artesanales de la ciudad. Hechas con amor y los mejores ingredientes.
+          </p>
+        </div>
+        
+        <!-- Second section: Schedule and location -->
+        <div class="text-white">
+          <h4 class="text-lg font-bold mb-4">Horario</h4>
+          <p class="text-gray-300">Lunes - Viernes: 11:00 - 22:00</p>
+          <p class="text-gray-300">Sábado - Domingo: 12:00 - 23:00</p>
+          <button onclick="window.open('https://www.google.com/maps/place/The+Burger+House+Tandil/@-37.3254674,-59.1378998,878m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95911fb908088301:0x3f1971a86a0f1ffa!8m2!3d-37.3254674!4d-59.1378998!16s%2Fg%2F11vm6vtxt8?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D', '_blank')" class="mt-4 py-2 px-6 bg-yellow-400 text-zinc-900 rounded-lg hover:bg-yellow-500 transition-colors">
+            Ubicación
+          </button>
+          
+        </div>
+        
+        <!-- Third section: Social media links -->
+        <div>
+          <h4 class="text-lg font-bold mb-4">Síguenos</h4>
+          <div class="flex space-x-4">
+            <!-- Facebook Icon -->
+            <a href="https://www.instagram.com/theburgerhouse.tandil/?hl=es-la" class="text-gray-400 hover:text-yellow-400 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2L6 2c-1.104 0-2 .896-2 2v16c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2V4c0-1.104-.896-2-2-2zM12 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zM6 18v-8h12v8H6z"/>
+              </svg>
+            </a>
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/theburgerhouse.tandil/?hl=es-la" class="text-gray-400 hover:text-yellow-400 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.163c3.17 0 3.553.012 4.8.07 1.16.058 2.17.31 3.01 1.15.84.84 1.09 1.85 1.15 3.01.057 1.247.07 1.63.07 4.8s-.012 3.553-.07 4.8c-.058 1.16-.31 2.17-1.15 3.01-.84.84-1.85 1.09-3.01 1.15-1.247.057-1.63.07-4.8.07s-3.553-.012-4.8-.07c-1.16-.058-2.17-.31-3.01-1.15-.84-.84-1.09-1.85-1.15-3.01-.057-1.247-.07-1.63-.07-4.8s.012-3.553.07-4.8c.058-1.16.31-2.17 1.15-3.01.84-.84 1.85-1.09 3.01-1.15 1.247-.057 1.63-.07 4.8-.07zM12 0C8.741 0 8.323.012 7.04.07 5.742.13 4.736.664 3.948 1.452 3.16 2.24 2.727 3.242 2.668 4.54 2.612 5.824 2.6 6.252 2.6 12s.012 6.176.068 7.46c.058 1.298.492 2.3 1.28 3.088.788.788 1.794 1.32 3.088 1.28 1.247-.057 1.63-.07 7.46-.07s6.176.012 7.46.068c1.298.058 2.3-.492 3.088-1.28.788-.788 1.32-1.794 1.28-3.088-.057-1.247-.07-1.63-.07-7.46s.012-6.176.068-7.46C21.58.664 20.574.13 19.276.07 18.04.012 17.623 0 12 0z"/>
+              </svg>
+            </a>
+            <!-- Twitter Icon -->
+            <a href="https://www.instagram.com/theburgerhouse.tandil/?hl=es-la" class="text-gray-400 hover:text-yellow-400 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.46 6.011c-.79.349-1.635.585-2.522.692.907-.542 1.601-1.402 1.928-2.428-.849.502-1.791.868-2.794 1.061-.801-.853-1.936-1.387-3.19-1.387-2.42 0-4.389 1.969-4.389 4.389 0 .344.039.68.112 1.002-3.645-.183-6.868-1.929-9.032-4.588-.378.649-.595 1.401-.595 2.206 0 1.524.776 2.869 1.951 3.662-.72-.023-1.4-.221-1.998-.553v.057c0 2.121 1.508 3.891 3.51 4.295-.369.099-.758.153-1.155.153-.283 0-.561-.027-.834-.08.561 1.748 2.188 3.02 4.113 3.057-1.507 1.181-3.403 1.885-5.467 1.885-.355 0-.705-.021-1.05-.062 1.943 1.243 4.253 1.97 6.727 1.97 8.085 0 12.526-6.688 12.526-12.526 0-.19 0-.38-.014-.57.86-.624 1.603-1.402 2.19-2.292z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bottom copyright and year -->
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; <span id="year"></span> Burger House. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- WhatsApp Button -->
+<a href="https://wa.me/+5492494606000" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="h-8 w-8">
+  </a>
+  
+ 
+
+  <!-- Vinculación al archivo JS externo -->
+  <script src="/js/app.js"></script>
+  <script src="/js/cart.js"></script>
+
+
+</body>
+</html>
