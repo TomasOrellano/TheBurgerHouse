@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Compra</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  <div class="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
+    <h1 class="text-2xl font-bold text-center mb-4">Simulador de Compra</h1>
+
+    <!-- Formulario -->
+    <form id="order-form">
+      <!-- Nombre -->
+      <div class="mb-4">
+        <label for="name" class="block text-lg font-medium mb-2">Nombre:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Ingresa tu nombre"
+          class="w-full p-3 border rounded-md"
+          required
+        />
+      </div>
+
+      <!-- Selección de Hamburguesa -->
+      <div class="mb-4">
+        <label for="burger" class="block text-lg font-medium mb-2">Elige una hamburguesa:</label>
+        <select id="burger" class="w-full p-3 border rounded-md">
+          <option value="5.99">Meat & Cheese - $5.99</option>
+          <option value="6.49">Chicken Burger - $6.49</option>
+          <option value="4.99">Cheese Lover - $4.99</option>
+          <option value="7.99">Bacon Burger - $7.99</option>
+          <option value="8.49">Classic Burger - $8.49</option>
+        </select>
+      </div>
+
+      <!-- Cantidad -->
+      <div class="mb-4">
+        <label for="quantity" class="block text-lg font-medium mb-2">Cantidad:</label>
+        <input
+          type="number"
+          id="quantity"
+          min="1"
+          placeholder="¿Cuántas quieres?"
+          class="w-full p-3 border rounded-md"
+          required
+        />
+      </div>
+
+      <!-- Botón -->
+      <button
+        type="button"
+        id="calculate-button"
+        class="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600"
+      >
+        Calcular Total
+      </button>
+    </form>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

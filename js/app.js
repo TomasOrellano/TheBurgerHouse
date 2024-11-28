@@ -16,7 +16,7 @@ menuButton.addEventListener('click', () => {
 // Datos de las hamburguesas
 const burgers = [
   { id: 1, nombre: "Meat & Cheese", precio: 10000, imagen: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" },
-  { id: 2, nombre: "Burger Deluxe", precio: 12000, imagen: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" },
+  { id: 2, nombre: "Meat & Cheese", precio: 12000, imagen: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" },
   { id: 3, nombre: "Cheese Lover", precio: 14000, imagen: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" },
   { id: 4, nombre: "Classic Burger", precio: 8000, imagen: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" },
   { id: 5, nombre: "Classic Burger", precio: 8000, imagen: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" },
