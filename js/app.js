@@ -56,6 +56,7 @@ function guardarCarritoEnLocalStorage() {
   localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 
+// Obtener carrito desde localStorage
 function obtenerCarritoDesdeLocalStorage() {
   const carritoGuardado = localStorage.getItem('carrito');
   return carritoGuardado ? JSON.parse(carritoGuardado) : [];
@@ -84,6 +85,7 @@ function actualizarContenidoCarrito() {
 // Eliminar del carrito
 function eliminarDelCarrito(nombre) {
   carrito = carrito.filter(item => item.nombre !== nombre);
+  guardarCarritoEnLocalStorage();
   actualizarContenidoCarrito();
 }
 
@@ -95,10 +97,13 @@ function actualizarTotal() {
 
 // Modal de carrito
 const modal = document.getElementById('cart-modal');
+
+// Abrir modal
 document.querySelectorAll('.open-modal').forEach(button => {
   button.addEventListener('click', () => modal.classList.remove('hidden'));
 });
 
+// Finalizar compra
 document.querySelector('.finalizar-compra').addEventListener('click', () => {
   if (carrito.length === 0) {
     Swal.fire({
@@ -106,28 +111,39 @@ document.querySelector('.finalizar-compra').addEventListener('click', () => {
       title: 'Carrito vacío',
       text: 'Agrega productos antes de finalizar tu compra.',
       confirmButtonText: 'Entendido',
-      confirmButtonColor: '#fbbf24', // Amarillo
+      confirmButtonColor: '#fbbf24',
     });
     return;
   }
 
-  // Mostrar el mensaje de agradecimiento
+  // Mostrar mensaje de agradecimiento
   Swal.fire({
     icon: 'success',
     title: '¡Gracias por tu compra!',
     text: 'Tu pedido ha sido recibido. Pronto nos pondremos en contacto contigo.',
     confirmButtonText: 'OK',
-    confirmButtonColor: '#34d399', // Verde
+    confirmButtonColor: '#34d399',
+  }).then(() => {
+    // Reiniciar el carrito
+    carrito = [];
+    guardarCarritoEnLocalStorage();
+    actualizarContenidoCarrito();
+
+    // Cerrar modal
+    modal.classList.add('hidden');
   });
+});
 
-  // Reiniciar el carrito
-  carrito = [];
-  guardarCarritoEnLocalStorage();
-  actualizarContenidoCarrito();
+// Cerrar modal al hacer clic en "X"
+document.getElementById('close-cart-modal').addEventListener('click', () => {
+  modal.classList.add('hidden');
+});
 
-  // Cerrar el modal
-  document.getElementById('cart-modal').classList.add('hidden');
-  document.body.classList.remove('overflow-hidden');
+// Cerrar modal al hacer clic fuera del contenido
+modal.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.classList.add('hidden');
+  }
 });
 
 // Cargar el menú inicial
