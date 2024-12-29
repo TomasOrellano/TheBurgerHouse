@@ -1,0 +1,36 @@
+{
+    "burgers": [
+      { 
+        "nombre": "Meat & Cheese", 
+        "precio": 10000, 
+        "imagen": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" 
+      },
+      { 
+         "nombre": "Classic Burger", 
+        "precio": 12000, 
+        "imagen": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" 
+      },
+      { 
+
+        "nombre": "Burger Bacon", 
+        "precio": 14000, 
+        "imagen": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" 
+      },
+      { 
+        "nombre": "Burger Veggie", 
+        "precio": 8000, 
+        "imagen": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" 
+      },
+      { 
+        "nombre": "Burger Smoke", 
+        "precio": 8000, 
+        "imagen": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" 
+      },
+      { 
+        "nombre": "Classic Burger", 
+        "precio": 8000, 
+        "imagen": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=3271&auto=format&fit=cropr" 
+      }
+    ]
+  }
+  
